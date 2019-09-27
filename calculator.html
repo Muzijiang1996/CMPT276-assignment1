@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CourSys - Formula Tester</title>
+    <link rel="stylesheet" href="calculator.css" defer>
+    <script src="calculator.js" defer></script>
+   </head>
+
+  <body>
+    <div class="whitepart">
+    <br>
+    <h1><br>
+       Grade Calculator
+     </h1>
+
+    <div class="bluepart">
+    <h3><b>Activities</b></h3>
+    <br>
+    <p> Give grades to the numeric activitys</p>
+
+    <table table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse" bordercolor="#C0C0C0" width="100%">
+    <tr>
+      <td bgcolor="#DCDCDC"><b>Name<b></td>
+      <td bgcolor="#DCDCDC"><b>Short Name<b></td>
+      <td bgcolor="#DCDCDC"><b>Weight<b></td>
+      <td bgcolor="#DCDCDC"><b>Grade<b></td>
+      <td bgcolor="#DCDCDC"><b>Percent<b></td>
+    </tr>
+    <tr>
+      <td>Activity1</td>
+      <td>A1</td>
+      <td><input type="tel" id="w1"></td>
+      <td><input type="tel" id="g1" onkeyup ="p1()"><b>/<b><br>
+      	<input type="tel"id="t1" onkeyup ="p1()"> </td>
+      <td id="p1"></td>
+    </tr>
+    <tr>
+      <td>Activity2</td>
+      <td>A2</td>
+      <td><input type="tel" id="w2"></td>
+      <td><input type="tel" id="g2" onkeyup ="p2()"><b>/<b><br>
+      	<input type="tel" id="t2" onkeyup ="p2()"> </td>
+      <td id="p2"></td>
+    </tr>
+    <tr>
+      <td>Activity3</td>
+      <td>A3</td>
+      <td><input type="tel" id="w3"></td>
+      <td><input type="tel" id="g3" onkeyup ="p3()"><b>/<b><br>
+      	<input type="tel" id="t3" onkeyup ="p3()"> </td>
+      <td id="p3"></td>
+    </tr>
+    <tr>
+      <td>Activity4</td>
+      <td>A4</td>
+      <td><input type="tel" id="w4"></td>
+      <td><input type="tel" id="g4"onkeyup ="p4()"><b>/<b><br>
+      	<input type="tel" id="t4"onkeyup ="p4()"> </td>
+      <td id="p4"></td>
+    </tr>
+    </table>
+    <h4><b>Result: </b></h4>
+    <p id="mean"></p>
+    <p id="weight"></p>
+    <button id="button1" class="button1" onclick ="calweight()">WEIGHTED</button>
+    <button id="button2" class="button2" onclick ="calmean()">MEAN</button>
+    
+    <br>
+    </div>
+    <br>
+  </div>
+
+  </body>
+
+</html>
